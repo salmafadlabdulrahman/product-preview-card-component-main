@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+
+  <body>
+    <!--A main tag to contain the whole card element -->
+    <main>
+      <!--article tag is used for something like standalone a piece of content-->
+      <article class="item">
+        <picture class="item__img">
+          <source srcset="images/image-product-desktop.jpg" media="(min-width:600px)">
+            <img src="images/image-product-mobile.jpg" alt="Channel's new perfume" />
+        </picture>
+
+        <div class="item__content">
+          <p class="item__category">Perfume</p>
+          <h1 class="item__title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="paragraph">
+            A floral, solar and voluptuous <br />interpretation composed by
+            Olivier Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="prices">
+          <p class="item__price">
+            <span class="visually-hidden">Current price:</span>
+            $149.9
+          </p>
+          <p class="item__original-price">
+            <span class="visually-hidden">Original price:</span>
+            <s>$169.99</s>
+          </p>
+        </div>
+
+        <button class="btn" data-icon="shopping-cart">Add to Cart</button>
+
+
+      </article>
+    </main>
+  </body>
+</html>
